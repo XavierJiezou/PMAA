@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<style type="text/css">
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ACR</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">ACR: Attention Collaboration-based Regressor for Arbitrary Two-Hand Reconstruction</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/ZhengdiYu" target="_blank">Zhengdi Yu</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=o31BPFsAAAAJ&hl=en" target="_blank">Shaoli Huang</a><sup>2,*</sup>,</span>
+                  <span class="author-block">
+                    <a href="http://fangchen.org/" target="_blank">Chen Fang</a><sup>2</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://breckon.org/toby/research/" target="_blank">Toby P. Breckon</a><sup>1</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://juewang725.github.io/" target="_blank">Jue Wang</a>
+                        <span class="author-block">
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Durham University, <sup>2</sup>Tencent AI Lab<br>CVPR 2023</span>
+                    <!--<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2303.05938.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/ZhengdiYu/Arbitrary-Hands-3D-Reconstruction" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2303.05938" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="static/videos/1_compress.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <div class="content">
+           <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+             <source src="static/videos/2_compress.mp4"
+                     type="video/mp4">
+           </video>
+         </div>
+       </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+    <h2 class="subtitle has-text-centered">
+        <span class="dnerf">ACR</span> is the first one-stage arbitrary hand reconstruction method using only a monocular RGB image as input.
+    </h2>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Reconstructing two hands from monocular RGB images is challenging due to frequent occlusion and mutual confusion. Existing methods mainly learn an entangled representation to encode two interacting hands, which are incredibly fragile to impaired interaction, such as truncated hands, separate hands, or external occlusion. This paper presents ACR (Attention Collaboration-based Regressor), which makes the first attempt to reconstruct hands in arbitrary scenarios. To achieve this, ACR explicitly mitigates interdependencies between hands and between parts by leveraging center and part-based attention for feature extraction. However, reducing the interdependence helps release the input constraint while weakening the mutual reasoning about reconstructing the interacting hands. Thus, ACR also learns cross-hand prior based on center attention to handle the interacting hands better. We evaluate our method on various types of hand reconstruction datasets. Our method significantly outperforms the best interacting-hand approaches on the InterHand2.6M dataset while yielding comparable performance with the state-of-the-art single-hand methods on the FreiHand dataset. More qualitative results on in-the-wild and hand-object interaction datasets and web images/videos further demonstrate the effectiveness of our approach for arbitrary hand reconstruction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Method -->
+<section class="section" id="method">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <center>
+		<table align=center width=850px>
+			<tr>
+				<td width=850px>
+					<center>
+						<img class="round" style="width:850px" src="static/images/method.jpg"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+		<table align=center width=850px>
+			<tr>
+				<td>
+					ACR takes a full-person image and uses a feature map encoder to extract hand-center maps, part segmentation maps, cross-hand prior maps, and parameter maps. Subsequently, the feature aggregator generates the final feature for the hand model regression based on these feature maps.
+				</td>
+			</tr>
+		</table>
+	  </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method -->
+
+<!-- Results -->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+	      <div id="results-carousel" class="carousel results-carousel">
+	       <div class="item">
+		<!-- Your image here -->
+		<img src="static/images/interhand.jpg" alt="MY ALT TEXT"/>
+		<h2 class="subtitle has-text-centered">
+		  Qualitative comparison with on InterHand 2.6M test dataset. Our approach generates better results in two-hand reconstruction, particularly in challenging cases such as external occlusion (1), truncation (3-4), or bending one finger with another hand (6). More results can be found in the Supplementary Material.
+		</h2>
+	      </div>
+	      <div class="item">
+		<!-- Your image here -->
+		<img src="static/images/wild.jpg" alt="MY ALT TEXT"/>
+		<h2 class="subtitle has-text-centered">
+		  Results from RGB2Hands dataset and in-the-wild videos.
+		</h2>   
+	      </div>
+	      <div class="item">
+		<!-- Your image here -->
+		<img src="static/images/ego.jpg" alt="MY ALT TEXT"/>
+		<h2 class="subtitle has-text-centered">
+		  Ego-view results from RGB2Hands dataset and in-the-wild videos.
+		</h2>
+	      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+	
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+	      <div id="results-carousel" class="carousel results-carousel">
+	       <div class="item">
+		<!-- Your image here -->
+		<img src="static/images/inter.jpg" alt="MY ALT TEXT"/>
+		<h2 class="subtitle has-text-centered">
+		  Interacting hand and single hand reconstruction. Here, the images in (e) are selected from RGB2Hands benchmark. The others are from web videos.
+		</h2>
+	      </div>
+	      <div class="item">
+		<!-- Your image here -->
+		<img src="static/images/obj.jpg" alt="MY ALT TEXT"/>
+		<h2 class="subtitle has-text-centered">
+		  Hand-object interaction on web videos (watch videos above for more details).
+		</h2>   
+	      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End Results -->
+
+
+<!-- Application -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+	      <h2 class="title is-3">Applications</h2>
+	      <div id="results-carousel" class="carousel results-carousel">
+		<div class="item item-video1">
+		  <video poster="" id="video1" autoplay controls muted loop height="100%">
+		    <!-- Your video file here -->
+		    <source src="static/videos/intro_noshadow.mp4"
+		    type="video/mp4">
+		  </video>
+		</div>
+		<div class="item item-video2">
+		  <video poster="" id="video2" autoplay controls muted loop height="100%">
+		    <!-- Your video file here -->
+		    <source src="static/videos/v3_body.mp4"
+		    type="video/mp4">
+		  </video>
+		</div>
+		<div class="item item-video2">
+		  <video poster="" id="video2" autoplay controls muted loop height="100%">
+		    <!-- Your video file here -->
+		    <source src="static/videos/single-cropped.mp4"
+		    type="video/mp4">
+		  </video>
+		</div>
+		<div class="item item-video3">
+		  <video poster="" id="video3" autoplay controls muted loop height="100%">\
+		    <!-- Your video file here -->
+		    <source src="static/videos/qin.mp4"
+		    type="video/mp4">
+		  </video>
+	</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Application -->
+
+<!-- Demo video-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+	  <h2 class="title is-3">Videos</h2>
+	
+           <div class="column">
+             <div class="content">
+               <div class="publication-video">
+               <!-- Youtube embed code here -->
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/WKRkm3Tfn3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             </div>
+            </div>
+	
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Demo video -->
+
+	
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Technical Paper</h2>
+
+      <br>
+	<hr>
+	<!-- <table align=center width=450px> -->
+	     <table align=center width=700px> 
+		<tr>
+			<td><a href="https://arxiv.org/pdf/2303.05938.pdf"><img class="layered-paper-big" style="height:175px" src="static/images/paper.jpg"/></a></td>
+			<td><span style="font-size:10pt">Zhengdi Yu, Shaoli Huang, Chen Fang, Toby P. Breckon, Jue Wang<br>
+				<b>ACR: Attention Collaboration-based Regressor for Arbitrary Two-Hand Reconstruction</b><br>
+				In Conference on Computer Vision and Pattern Recognition (CVPR), 2023.<br>
+				<!--(<a href="https://arxiv.org/pdf/2303.05938.pdf">camera ready</a>)<br>-->
+				<span style="font-size:4pt"><a href=""><br></a>
+				</span>
+			</td>
+		</tr>
+	</table>
+	<br>
+      <!-- <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe> -->
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{yu2023acr,
+  title = {ACR: Attention Collaboration-based Regressor for Arbitrary Two-Hand Reconstruction},
+  author = {Yu, Zhengdi and Huang, Shaoli and Chen, Fang and Breckon, Toby P. and Wang, Jue},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2023}
+  }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+	  <p>
+	       This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+               Commons Attribution-ShareAlike 4.0 International License</a>.
+	       
+	       This page was built using the <a href="https://nerfies.github.io/" target="_blank">Nerfies website</a>.
+               You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+	  </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
