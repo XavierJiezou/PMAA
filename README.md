@@ -6,8 +6,8 @@
 </p>
 <p align="center">
     <a href="https://blog.csdn.net/qq_42951560">Xuechao Zou<sup>1,*</sup></a>,
-    <a href="https://cslikai.cn/">Kai Li<sup>2</sup></a>,
-    <a href="https://www.cs.tsinghua.edu.cn/info/1116/5088.htm">Junliang Xing<sup>2,*</sup></a>,
+    <a href="https://cslikai.cn/">Kai Li<sup>2,*</sup></a>,
+    <a href="https://www.cs.tsinghua.edu.cn/info/1116/5088.htm">Junliang Xing<sup>2</sup></a>,
     <a href="https://www.cs.tsinghua.edu.cn/info/1117/3542.htm">Pin Tao<sup>1,2,†</sup></a>,
     <a href="https://cs.qhu.edu.cn/jxgz/jxysz/szgk/22173.htm">Yachao Cui<sup>1</sup></a>
 </p>
