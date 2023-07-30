@@ -19,7 +19,7 @@
   </p>
   <p align="center">
     <a href="[/docs/README.en.md](https://arxiv.org/abs/2303.16565)">Paper Preprint </a>
-    •
+    |
     <a href="[/docs/README.cn.md](https://xavierjiezou.github.io/PMAA)">Project Page</a>
 </p>
 
