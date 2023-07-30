@@ -18,9 +18,9 @@
     <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a><sup>2</sup>
   </p>
   <p align="center">
-    <a href="[/docs/README.en.md](https://arxiv.org/abs/2303.16565)">Paper Preprint </a>
+    <a href="https://arxiv.org/abs/2303.16565">Paper Preprint </a>
     |
-    <a href="[/docs/README.cn.md](https://xavierjiezou.github.io/PMAA)">Project Page</a>
+    <a href="https://xavierjiezou.github.io/PMAA">Project Page</a>
 </p>
 
 <p align="center">
