@@ -254,7 +254,7 @@ class DepthwiseSeparableConv(nn.Module):
             noskip=False, pw_kernel_size=1, pw_act=False, act_layer=nn.ReLU, norm_layer=nn.BatchNorm2d,
             se_layer=None, drop_path_rate=0.):
         super(DepthwiseSeparableConv, self).__init__()
-        norm_act_layer = get_norm_act_layer(norm_layer, act_layer)
+        norm_act_layer = get_norm_act_layer(norm_layer)
         groups = num_groups(group_size, in_chs)
         self.has_skip = (stride == 1 and in_chs == out_chs) and not noskip
         self.has_pw_act = pw_act
@@ -494,7 +494,7 @@ class PMAA(nn.Module):
                                         hidden_channels, upsampling_depth=5, norm=norm, act=act) for i in range(2)])
         self.output_layer = nn.Sequential(
             nn.Conv2d(hidden_channels, out_channels,
-                      kernel_size=7, padding=int((7-1)//2)),
+                      kernel_size=1),
             nn.Tanh()
         )
 
