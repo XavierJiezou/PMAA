@@ -8,7 +8,13 @@ import cv2
 import torch
 import torch.nn as nn
 
-from skimage.measure import compare_psnr, compare_ssim
+# Original Code Begins ======
+# from skimage.measure import compare_psnr, compare_ssim
+# Original Code Ends ======
+# New Code Begins ======
+from skimage.metrics import peak_signal_noise_ratio as compare_psnr
+from skimage.metrics import structural_similarity as compare_ssim
+# New Code Ends ======
 
 
 def fixed_seed(myseed):
@@ -103,8 +109,13 @@ def save_image(image, save_path, image_name):
 
 def psnr_ssim_cal(cloudfree, predict):
     psnr = compare_psnr(cloudfree, predict)
-    ssim = compare_ssim(cloudfree, predict, multichannel=True,
-                        gaussian_weights=True, use_sample_covariance=False, sigma=1.5)
+    # Original Code Begins =======
+    # ssim = compare_ssim(cloudfree, predict, multichannel=True,
+    #                     gaussian_weights=True, use_sample_covariance=False, sigma=1.5)
+    # Original Code Ends =======
+    # New Code Begins =======
+    ssim = compare_ssim(cloudfree, predict, multichannel = True, channel_axis=2)
+    # New Code Ends =======
     return psnr, ssim
 
 

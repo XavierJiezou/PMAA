@@ -37,6 +37,9 @@
 - [2023/07/16] PMAA got accepted by ECAI 2023.
 - [2023/03/29] PMAA is on arXiv now.
 
+## MAJOR UPDATE FOR ALLCLEAR
+1. Update `from skimage.measure import compare_psnr, compare_ssim` with `from skimage.metrics.peak_signal_noise_ratio` and `skimage.metrics import structural_similarity`; change the code `ssim = compare_ssim(cloudfree, predict, multichannel = True, channel_axis=2)` accordingly.
+
 ## Requirements
 
 To install dependencies:
