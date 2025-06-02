@@ -111,7 +111,8 @@ If you use our code or models in your research, please cite with:
   title={PMAA: A Progressive Multi-scale Attention Autoencoder Model for High-Performance Cloud Removal from Multi-temporal Satellite Imagery},
   author={Zou, Xuechao and Li, Kai and Xing, Junliang and Tao, Pin and Cui, Yachao},
   journal={European Conference on Artificial Intelligence (ECAI)},
-  year={2023}
+  year={2023},
+  pages={3165-3172},
 }
 ```
 
