@@ -1,7 +1,7 @@
 <p align="center">
     <img alt="logo" src="image/README/ecai23.png" />
 <h1 align="center">PMAA: A Progressive Multi-scale Attention Autoencoder Model for High-Performance Cloud Removal from Multi-temporal Satellite Imagery</h1>
-<p align="center">This repository is the official PyTorch implementation of the accepted paper PMAA of ECAI 2023.
+<p align="center">This repository is the official PyTorch implementation of the accepted paper PMAA of ECAI 2023 Oral.
 </p>
 </p>
 <p align="center">
@@ -34,7 +34,7 @@
 ## News
 
 - [2023/07/30] Code release.
-- [2023/07/16] PMAA got accepted by ECAI 2023.
+- [2023/07/16] PMAA got accepted by ECAI 2023 Oral.
 - [2023/03/29] PMAA is on arXiv now.
 
 ## Requirements
